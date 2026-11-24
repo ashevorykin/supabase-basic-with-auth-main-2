@@ -8,3 +8,12 @@
 
 
 }
+.card{
+    border: none;
+}
+.card-body{
+    border: black 2px solid;
+    margin: 10px;
+    background-color: rgb(166, 204, 218);
+    border-radius: 10px;
+}
