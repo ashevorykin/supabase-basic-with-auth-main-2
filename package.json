@@ -1,0 +1,18 @@
+{
+  "name": "supabase-basic-with-auth-main-2",
+  "private": true,
+"scripts": {
+    "build": "export $(cat .env | xargs) && bun build app.js --outdir dist --target browser --define 'process.env.SUPABASE_URL=\"'$SUPABASE_URL'\"' --define 'process.env.SUPABASE_KEY=\"'$SUPABASE_KEY'\"'",
+    "start": "bun run server.ts",
+    "dev": "bun run build && bun run start"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2"
+  }
+}
